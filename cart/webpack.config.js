@@ -15,6 +15,10 @@ module.exports = {
       exposes: {
         './CartShow': './src/index',
       },
+      // Basically, we are saying that we want to share the faker library
+      // So if the products and cart both import faker, they will get the same
+      // An extra copy of faker will not be bundled with the products and cart
+      shared: ['faker'],
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
