@@ -3,5 +3,6 @@
 // It looks for the word "products" in the import statement
 // So product is the keyword that webpack will look for so they must match
 import 'products/ProductsIndex';
+import 'cart/CartShow';
 
 console.log('This is the container');
