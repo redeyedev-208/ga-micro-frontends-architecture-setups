@@ -10,6 +10,7 @@ module.exports = {
     new ModuleFederationPlugin({
       name: 'products',
       filename: 'remoteEntry.js',
+      // This is an alias for the products index file
       exposes: {
         './ProductsIndex': './src/index',
       },
