@@ -13,7 +13,7 @@ module.exports = {
       name: 'cart',
       filename: 'remoteEntry.js',
       exposes: {
-        './CartShow': './src/index',
+        './CartShow': './src/bootstrap',
       },
       // Basically, we are saying that we want to share the faker library
       // So if the products and cart both import faker, they will get the same

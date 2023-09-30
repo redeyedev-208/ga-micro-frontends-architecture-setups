@@ -24,14 +24,14 @@ const mount = (el) => {
 // We want to immediately render our app into that element
 // The env variable is set in webpack.config.js
 
-// Assuming our container doesn't have an element with an id of dev-products
-// We are running this file in isolation
-// We are using our local index.html file
-// Which DEFINITELY has an element with an id of dev-products
-// We want to immediately render our app into that element
 if (process.env.NODE_ENV === 'development') {
   const el = document.querySelector('#dev-faker-products');
 
+  // Assuming our container doesn't have an element with an id of dev-products
+  // We are running this file in isolation
+  // We are using our local index.html file
+  // Which DEFINITELY has an element with an id of dev-faker-products
+  // We want to immediately render our app into that element
   if (el) {
     // We are probably running in isolation
     mount(el);
